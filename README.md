@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Pomodoro Timer App ⏰ 
+A simple and effective Pomodoro Timer application to help you manage your time and boost productivity. This app alternates between work and break intervals, following the Pomodoro Technique.
+## Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Work and Break Intervals: Switch between work sessions and short breaks.
 
-## Available Scripts
+- Customizable Timers: Set your preferred work and break durations.
 
-In the project directory, you can run:
+- Start, Pause, and Reset: Control the timer with intuitive buttons.
 
-### `npm start`
+- Responsive Design: Works seamlessly on desktop and mobile devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Visual Feedback: Clear indicators for work mode and break mode.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ ## How It Works
+- Work Mode: Focus on your task for a set duration (e.g., 25 minutes).
 
-### `npm test`
+- Short Break: Take a short break (e.g., 5 minutes) after completing a work session.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Repeat: Continue alternating between work and break sessions to stay productive.
 
-### `npm run build`
+## Technologies Used
+- Frontend: React, Vite
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Styling: CSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Icons: Google Fonts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Build Tool: Vite
 
-### `npm run eject`
+## Acknowledgments
+- Inspired by the Pomodoro Technique.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Built with ❤️ by julie_alt.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
