@@ -22,6 +22,7 @@ function App() {
   const [timeMin, setTimeMin] = useState(25);
   const [timeSec, setTimeSec] = useState(0);
   const [isWorkMode, setIsWorkMode] = useState(true);
+  const [isSoundEnabled, setIsSoundEnabled] = useState(true);
 
   useEffect(() => {
     if (isRunning) {
@@ -85,6 +86,19 @@ function App() {
     clockSound.stop();
   };
 
+  const toggleSound = () => {
+    setIsSoundEnabled(!isSoundEnabled);
+    clockSound.mute(!isSoundEnabled);
+  };
+
+  const reduceTime = () => {
+    setTimeMin(timeMin - 1);
+  };
+
+  const increaseTime = () => {
+    setTimeMin(timeMin + 1);
+  };
+
   return (
     <div className="App">
       <div className="header">
@@ -96,9 +110,12 @@ function App() {
 
       <div className="timer">
         <div className="timeCard">
-          <p>
-            {timeMin}:{timeSec < 10 ? "0" + timeSec : timeSec}
-          </p>
+          {timeMin}:{timeSec < 10 ? "0" + timeSec : timeSec}
+        </div>
+
+        <div className="timer-control">
+          <button onClick={increaseTime}>+</button>{" "}
+          <button onClick={reduceTime}>-</button>
         </div>
 
         <div className="btn-container">
@@ -140,6 +157,11 @@ function App() {
               disabled={isWorkMode}
             >
               Work
+            </button>
+          </div>
+          <div className="btn">
+            <button onClick={toggleSound} className="toggle-btn">
+              {isSoundEnabled ? "Sound on " : "Sound off"}
             </button>
           </div>
         </div>
